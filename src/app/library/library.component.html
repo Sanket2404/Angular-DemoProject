@@ -1,0 +1,39 @@
+<!-- <p>library works!</p>
+<div *ngFor="let b of BookData">
+<h1>{{b.aisle}}</h1>
+<h1>{{b.entry}}</h1>
+</div> -->
+
+<div class="container text-center">
+    <h2>Bools Available here</h2>
+<table class="table mt-5">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">SrNo</th>
+        <th scope="col">Entry</th>
+        <th scope="col">aisle</th>
+        <!-- <th scope="col">Handle</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let b of BookData">
+        <th scope="row">1</th>
+        <td>{{b.entry}}</td>
+        <td>{{b.aisle}}</td>
+        <!-- <td>@mdo</td> -->
+      </tr>
+      <!-- <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr> -->
+    </tbody>
+  </table>
+</div>

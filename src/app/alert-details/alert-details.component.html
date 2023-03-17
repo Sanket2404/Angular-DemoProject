@@ -1,0 +1,12 @@
+<p *ngIf="car.ModelNo>500">Cars is Available</p>
+
+<ng-container *ngIf="car.Qty>0 then temp1 else temp2">
+</ng-container>
+<ng-template #temp1>
+<button [disabled]=isUnchanged (click)=" clickChildMe()" class="btn btn-primary">Show More..</button>
+</ng-template>
+
+<ng-template #temp2>
+    <p>Cars is not available</p>
+</ng-template>
+
